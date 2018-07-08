@@ -148,9 +148,10 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294967039
-  moveForce: 10
-  maxSpeed: 50
-  jumpForce: 500
+  moveForce: 20
+  maxSpeed: 4
+  jumpForce: 250
+  friction: 0.9
   groundCheck: {fileID: 4028705463818720}
 --- !u!212 &212041161593785858
 SpriteRenderer:
