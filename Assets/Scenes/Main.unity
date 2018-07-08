@@ -251,7 +251,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.345034
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -301,15 +301,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4754139158338842, guid: 4d2995f13cbaa4907ab6d4141fe53705, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4754139158338842, guid: 4d2995f13cbaa4907ab6d4141fe53705, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4754139158338842, guid: 4d2995f13cbaa4907ab6d4141fe53705, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4754139158338842, guid: 4d2995f13cbaa4907ab6d4141fe53705, type: 2}
       propertyPath: m_LocalRotation.w
@@ -319,35 +319,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 58036949820895360, guid: 4d2995f13cbaa4907ab6d4141fe53705,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 61688646547874972, guid: 4d2995f13cbaa4907ab6d4141fe53705,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 61688646547874972, guid: 4d2995f13cbaa4907ab6d4141fe53705,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 58036949820895360, guid: 4d2995f13cbaa4907ab6d4141fe53705,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 114685115517464928, guid: 4d2995f13cbaa4907ab6d4141fe53705,
         type: 2}
       propertyPath: moveForce
-      value: 100
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114685115517464928, guid: 4d2995f13cbaa4907ab6d4141fe53705,
         type: 2}
       propertyPath: maxSpeed
-      value: 1000
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d2995f13cbaa4907ab6d4141fe53705, type: 2}

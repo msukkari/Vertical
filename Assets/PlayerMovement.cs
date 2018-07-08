@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour {
 
     [HideInInspector] public bool jump = false;
     public LayerMask whatIsGround;
-    public float moveForce = 0.1f;
-    public float maxSpeed = 0.3f;
+    public float moveForce = 0.0001f;
+    public float maxSpeed = 0.00000001f;
     public float jumpForce = 0.4f;
     public Transform groundCheck;
 
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour {
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, whatIsGround);
         Debug.Log(grounded);
 
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetAxis("Vertical") > 0 && grounded)
         {
             jump = true;
         }

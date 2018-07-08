@@ -37,8 +37,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4598833668874116}
-  - component: {fileID: 61712029810162286}
   - component: {fileID: 50321060304278104}
+  - component: {fileID: 61778990735528754}
   m_Layer: 0
   m_Name: TransportPlatform
   m_TagString: Untagged
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &61712029810162286
+--- !u!61 &61778990735528754
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -158,7 +158,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.6, y: 1}
   m_EdgeRadius: 0
 --- !u!64 &64510401278742546
 MeshCollider:
