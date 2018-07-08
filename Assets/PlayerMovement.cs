@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpForce = 0.4f;
     public float friction = 0.1f;
     public Transform groundCheck;
+    public Transform groundCheck1;
 
 
     private bool grounded = false;
@@ -39,13 +40,17 @@ public class PlayerMovement : MonoBehaviour {
         if (Mathf.Abs(rb2d.velocity.x) > maxSpeed)
             rb2d.velocity = new Vector2(Mathf.Sign(rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
 
-        if (h == 0)
-            rb2d.velocity = new Vector2(rb2d.velocity.x * friction, rb2d.velocity.y);
+        grounded = Physics2D.Linecast(transform.position, groundCheck.position, whatIsGround)
+                            || Physics2D.Linecast(transform.position, groundCheck1.position, whatIsGround);
 
-        grounded = Physics2D.Linecast(transform.position, groundCheck.position, whatIsGround);
         Debug.Log(grounded);
+
+        if (h == 0 && grounded)
+            rb2d.velocity = new Vector2(rb2d.velocity.x * friction, rb2d.velocity.y);
+        
         if (Input.GetAxis("Vertical") > 0 && grounded && !jump && rb2d.velocity.y <= 0)
         {
+            rb2d.velocity = new Vector2(rb2d.velocity.x, 0f);
             rb2d.AddForce(new Vector2(0f, jumpForce));
             jump = false;
         }
